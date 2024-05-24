@@ -5,6 +5,7 @@ let mountain1=document.getElementById("mountain1")
 let mountain2=document.getElementById("mountain2")
 let river=document.getElementById("river")
 let boat=document.getElementById("boat")
+let main =document.querySelector(".mine")
 
 onscroll=function (){
     let value=scrollY
@@ -23,10 +24,10 @@ onscroll=function (){
     if(value>=115){
         star.style.display="none"
         boat.style.display="none"
-        document.body.style.background="linear-gradient(#242bfe,#365f89)"
+        main.style.background="linear-gradient(#242bfe,#365f89)"
 
     }else{
-        document.body.style.background="linear-gradient(#3b0148,#18034a)"
+        main.style.background="linear-gradient(#3b0148,#18034a)"
         star.style.display="block"
         boat.style.display="block"
     }
