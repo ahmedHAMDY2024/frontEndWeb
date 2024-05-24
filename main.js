@@ -11,10 +11,10 @@ onscroll=function (){
     if(value<=120){
     star.style.left=value+"px"
     star.style.width-value+"px"
-    moon.style.top=value*3+"px"
+    moon.style.top=value*2+"px"
     text.style.fontSize=value+"px"
-    boat.style.left=value*2+"px"
-    boat.style.top=value*2+"px"
+    boat.style.left=value*3+"px"
+    boat.style.top=value*1+"px"
     // mountain2.style.top=value+"px"
     // mountain2.style.right=value+"px"
     // mountain1.style.top=value+"px"
@@ -23,7 +23,10 @@ onscroll=function (){
     if(value>=115){
         star.style.display="none"
         boat.style.display="none"
+        document.body.style.background="linear-gradient(#242bfe,#365f89)"
+
     }else{
+        document.body.style.background="linear-gradient(#3b0148,#18034a)"
         star.style.display="block"
         boat.style.display="block"
     }
